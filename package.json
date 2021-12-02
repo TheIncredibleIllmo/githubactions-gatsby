@@ -11,11 +11,16 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "test": "jest"
   },
   "dependencies": {
-    "gatsby": "^4.2.0",
+    "gatsby": "^2.32.13",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "jest": "^27.4.3"
   }
 }

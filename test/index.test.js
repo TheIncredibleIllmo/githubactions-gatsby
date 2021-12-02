@@ -1,3 +1,3 @@
-describe("Initial test", () => {
-  it("should pass", () => {});
+test("Initial test", () => {
+  expect(1 + 1).toBe(2);
 });
