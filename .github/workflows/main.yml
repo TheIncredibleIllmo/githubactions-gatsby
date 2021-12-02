@@ -1,0 +1,17 @@
+name: Build-Test-Deploy
+
+on:
+  push:
+    - main
+
+jobs:
+  Build-Job:
+    runs-on: ubuntu-latest
+    name: Making builds
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install surge
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - run: npm install -g surge
